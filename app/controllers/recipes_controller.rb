@@ -17,4 +17,10 @@ class RecipesController < ApplicationController
     recipe = Reciple.create(recipe_params)
     redirect_to recipe_path
   end
+
+  private
+
+  def recipe_params
+    params.require(:recipe).permit(:name)
+  end
 end
