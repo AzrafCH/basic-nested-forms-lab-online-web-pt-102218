@@ -1,4 +1,5 @@
 <%= form_for @recipe  do |f| %>
+  <label>Recipe</label>
   <%= f.label :title %>
   <%= f.text_field :title %><br>
 
@@ -8,9 +9,6 @@
 
     <%= ing.label :quantity %>
     <%= ing.text_field :quantity %><br>
-
-    <%= ing.label :ingredient_type %>
-    <%= ing.text_field :ingredient_type %><br>
 
   <% end %>
 
